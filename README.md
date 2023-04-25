@@ -106,7 +106,7 @@ cd ..
 
 ```
 inappstore.debug.xcframework
-inappstore.release_debug.xcframwork
+inappstore.release_debug.xcframework
 inappstore.release.xcframework
 ```
 
