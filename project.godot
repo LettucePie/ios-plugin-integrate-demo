@@ -1,0 +1,27 @@
+; Engine configuration file.
+; It's best edited using the editor UI and not directly,
+; since the parameters that go here are not all obvious.
+;
+; Format:
+;   [section] ; section goes between []
+;   param=value ; assign values to parameters
+
+config_version=5
+
+[application]
+
+config/name="Ios-plugin-integrate-demo"
+config/description="This is a Guide / Demonstration on setting up your Godot work environment for iOS plugins. This is NOT a demonstration on using those plugins, JUST getting them to phone home."
+run/main_scene="res://start.tscn"
+config/features=PackedStringArray("4.0", "Mobile")
+config/icon="res://icon.svg"
+
+[display]
+
+window/size/viewport_width=720
+window/size/viewport_height=1280
+window/handheld/orientation=1
+
+[rendering]
+
+renderer/rendering_method="mobile"

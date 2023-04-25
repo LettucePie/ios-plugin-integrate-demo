@@ -1,0 +1,64 @@
+[gd_scene load_steps=4 format=3 uid="uid://boe14x1hhaulw"]
+
+[ext_resource type="Script" path="res://start.gd" id="1_wjeg7"]
+
+[sub_resource type="SystemFont" id="SystemFont_vrwii"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_6ah8q"]
+font = SubResource("SystemFont_vrwii")
+font_size = 20
+
+[node name="Start" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_wjeg7")
+
+[node name="Label" type="Label" parent="."]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.0138889
+anchor_top = 0.125
+anchor_right = 0.993056
+anchor_bottom = 0.771094
+offset_bottom = -1.52588e-05
+grow_horizontal = 2
+grow_vertical = 2
+text = "This iPhone has access to the InAppStore Plugin."
+label_settings = SubResource("LabelSettings_6ah8q")
+horizontal_alignment = 1
+autowrap_mode = 2
+clip_text = true
+metadata/_edit_use_anchors_ = true
+
+[node name="ColorRect" type="ColorRect" parent="."]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.367
+anchor_top = 0.817
+anchor_right = 0.619
+anchor_bottom = 0.959
+offset_left = -0.24001
+offset_top = 0.23996
+offset_right = 0.319987
+offset_bottom = 0.479935
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Help" type="Button" parent="."]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.689
+anchor_top = 0.843
+anchor_right = 0.935
+anchor_bottom = 0.934
+offset_left = -0.0800076
+offset_top = -0.0400696
+offset_right = -0.200045
+offset_bottom = 0.47998
+text = "Help"
+
+[connection signal="pressed" from="Help" to="." method="_on_help_pressed"]
