@@ -22,7 +22,7 @@ There are A LOT of potential pitfalls someone can fall into trying to get this w
 	2. Make your iOS Preset.
 	3. Setup your IDs and Export Mode in the Application section of your Preset.
 		1. This could not be more vague, I'm sorry. In short, you need to know your Appstore connect Team ID, and your Provisioning Profile UUID. I would recommend keeping the Export Method Debug as Development, and the Release as App Store.
-3. Run the Project once without any plugins.
+3. Build/Run the Project from XCODE once without any plugins.
 	1. If you encounter an Error here, then your Application section is probably wrong, or there is something wrong with your XCODE installation. Follow along the Output Console at the bottom of the editor to diagnose.
 	2. Open the IPA in XCODE.
 	3. Configure your Device to XCODE (Plug it in and enable developer settings)
